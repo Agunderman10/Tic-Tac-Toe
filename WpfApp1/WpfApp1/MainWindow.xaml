@@ -10,34 +10,38 @@
 
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="FontSize" Value="130"/>
+            <Setter Property="FontSize" Value="100"/>
         </Style>
     </Window.Resources>
-    <Grid x:Name="Container">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
 
-        <Border Grid.Column="1" Grid.RowSpan="4"/>
-        <Border Grid.Row="2" Grid.ColumnSpan="3"/>
+    <Grid>
+
         <TextBlock Text="Tic Tac Toe" FontSize="110" FontWeight="Bold" TextAlignment="Center" Background="Blue" Grid.Column="0" Grid.ColumnSpan="3"/>
-        <Button Name="Button1" Grid.Column="0" Grid.Row="1" Content="X"/>
-        <Button Name="Button2" Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="10,0,10,0" Content="O"/>
-        <Button Name="Button3" Grid.Column="2" Grid.Row="1"/>
-        <Button Name="Button4" Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="0,10,0,10"/>
-        <Button Name="Button5" Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="10,10,10,10"/>
-        <Button Name="Button6" Grid.Column="2" Grid.Row="2" BorderBrush="Black" BorderThickness="0,10,0,10"/>
-        <Button Name="Button7" Grid.Column="0" Grid.Row="3"/>
-        <Button Name="Button8" Grid.Column="1" Grid.Row="3" BorderBrush="Black" BorderThickness="10,0,10,0"/>
-        <Button Name="Button9" Grid.Column="2" Grid.Row="3"/>
 
+        <Grid x:Name="Container">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Name="Button1" Grid.Column="0" Grid.Row="1" Content="X" Click="Button_Click"/>
+            <Button Name="Button2" Grid.Column="1" Grid.Row="1" Content="O" Click="Button_Click"/>
+            <Button Name="Button3" Grid.Column="2" Grid.Row="1" Click="Button_Click"/>
+            <Button Name="Button4" Grid.Column="0" Grid.Row="2" Click="Button_Click"/>
+            <Button Name="Button5" Grid.Column="1" Grid.Row="2" Click="Button_Click"/>
+            <Button Name="Button6" Grid.Column="2" Grid.Row="2" Click="Button_Click"/>
+            <Button Name="Button7" Grid.Column="0" Grid.Row="3" Click="Button_Click"/>
+            <Button Name="Button8" Grid.Column="1" Grid.Row="3" Click="Button_Click"/>
+            <Button Name="Button9" Grid.Column="2" Grid.Row="3" Click="Button_Click"/>
+            
+        </Grid>
     </Grid>
+
 </Window>
