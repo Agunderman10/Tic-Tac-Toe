@@ -38,7 +38,7 @@ namespace WpfApp1
         //starts new game and sets all values to default
         private void NewGame()
         {
-            //Create a new blank array of free buttons. Length is 12 to account for textblock.
+            //Create a new blank array of free buttons
             ContentResults = new ContentType[9];
 
 
